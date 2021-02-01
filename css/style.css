@@ -3497,3 +3497,35 @@ body {
 .map-list a.tag8{color:#2166ff;font-size:15px}
 .map-list a.tag9{color:#dfc009;font-size:15px}
 .map-list a.tag10{color:#2f9c40;font-size:15px}
+/*输入框*/
+.searchform .search-box input:focus {
+  border-color: #FF6651
+}
+.searchform .search-box input {
+  width: 120px
+}
+.searchform-active .searchform .search-box input {
+  width: 100%;
+  float: none;
+  border-radius: 2px
+}
+.searchform .search-box input {
+  float: left;
+  color: #999;
+  border: solid 1px #eee;
+  width: 180px;
+  height: 32px;
+  padding: 4px 8px;
+  /*border-right: none;*/
+  font-size: 14px;
+  border-radius: 2px 0 0 2px;
+  outline: none;
+  background: #fff;
+}
+.searchform .search-box{
+  display: flex;
+  position:none;
+}
+.searchform .search-box .suggestions .suggestion a{
+  color: #888;
+}
