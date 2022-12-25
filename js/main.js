@@ -126,10 +126,11 @@ $(document).ready(function(){
 	
 
 	$('.sitenav-on').on(TBUI.click, function(){
-		//$('#qukuwu').toggleClass("sitenav-active")
+// 		$('#qukuwu').toggleClass("sitenav-active")
+		$('body').attr('class','444')
+		$('body').addClass('active')
+		TBUI.bd.addClass('activess')		
 // 		TBUI.bd.addClass("sitenav-active")
-		document.getElementById("qukuwu").classname="sitenav-active";
-		print(0);
 	})
 
 	$('.sitenav-mask').on(TBUI.click, function(){
