@@ -128,7 +128,7 @@ $(document).ready(function(){
 	$('.sitenav-on').on(TBUI.click, function(){
 		//$('#qukuwu').toggleClass("sitenav-active")
 // 		TBUI.bd.addClass("sitenav-active")
-		document.getelementbyid("qukuwu").classname="sitenav-active"
+		document.getelementbyid("qukuwu").classname="sitenav-active";
 		print(0)
 	})
 
