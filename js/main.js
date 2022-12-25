@@ -97,7 +97,9 @@ d+"px").css("background-color",a.isDark(e,i)?h.foreground:h.background).appendTo
 
 
 $(document).ready(function(){
-
+	
+	$('.searchstart-on').show()
+	$('body').removeClass('searchform-active')
 	
 	//当前页或者跳转后页面的导航栏添加选中后样式
     $(".sitenav a").each(function(i) {
@@ -123,8 +125,6 @@ $(document).ready(function(){
 	TBUI.fullimage = TBUI.fullimage ? Number(TBUI.fullimage) : 1
 
 	TBUI.click = 'click'
-	$('.searchstart-on').show()
-	$('body').attr('class','')
 	
 
 	$('.sitenav-on').on(TBUI.click, function(){
