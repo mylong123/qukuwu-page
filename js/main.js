@@ -108,34 +108,34 @@ $(document).ready(function(){
         if (durl == nurl) { //String 对象用于处理文本（字符串）
             $this.parent().addClass("current-menu-item");
         }
-
+	//显示搜索按钮
+	$('.searchstart-on').show()
+	//隐藏搜索框
+	$('#qukuwu').removeClass('searchform-active')
     });
 
 	// TBUI
 	window.TBUI = window.TBUI || {}
 
-    TBUI.bd = $('body')
+    	TBUI.bd = $('body')
 
 	TBUI.ajaxpager = TBUI.ajaxpager ? Number(TBUI.ajaxpager) : 10
-    TBUI.pagenum = TBUI.pagenum ? Number(TBUI.pagenum) : 20
-    TBUI.shareimage = TBUI.shareimage || ''
+    	TBUI.pagenum = TBUI.pagenum ? Number(TBUI.pagenum) : 20
+    	TBUI.shareimage = TBUI.shareimage || ''
 	TBUI.shareimagethumb = TBUI.shareimagethumb ? Number(TBUI.shareimagethumb) : 1
 	TBUI.fullgallery = TBUI.fullgallery ? Number(TBUI.fullgallery) : 1
 	TBUI.fullimage = TBUI.fullimage ? Number(TBUI.fullimage) : 1
 
 	TBUI.click = 'click'
 	
-	$('.searchstart-on').show()
-	TBUI.bd.removeClass('searchform-active')
-
-
 
 	$('.sitenav-on').on(TBUI.click, function(){
-		$('#qukuwu').toggleClass("sitenav-active")
+		//$('#qukuwu').toggleClass("sitenav-active")
+		TBUI.bd.addClass("sitenav-active")
 	})
 
 	$('.sitenav-mask').on(TBUI.click, function(){
-		$('#qukuwu').removeClass("sitenav-active")
+		TBUI.bd.removeClass("sitenav-active")
 	})
 
 
