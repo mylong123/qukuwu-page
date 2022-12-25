@@ -124,15 +124,18 @@ $(document).ready(function(){
 	TBUI.fullimage = TBUI.fullimage ? Number(TBUI.fullimage) : 1
 
 	TBUI.click = 'click'
+	
+	$('.searchstart-on').show()
+	TBUI.bd.removeClass('searchform-active')
 
 
 
 	$('.sitenav-on').on(TBUI.click, function(){
-		$('body').toggleClass("sitenav-active")
+		$('#qukuwu').toggleClass("sitenav-active")
 	})
 
 	$('.sitenav-mask').on(TBUI.click, function(){
-		$('body').removeClass("sitenav-active")
+		$('#qukuwu').removeClass("sitenav-active")
 	})
 
 
