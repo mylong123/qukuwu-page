@@ -128,11 +128,11 @@ $(document).ready(function(){
 
 
 	$('.sitenav-on').on(TBUI.click, function(){
-		TBUI.bd.toggleClass('sitenav-active')
+		$('body').toggleClass("sitenav-active")
 	})
 
 	$('.sitenav-mask').on(TBUI.click, function(){
-		TBUI.bd.removeClass('sitenav-active')
+		$('body').removeClass("sitenav-active")
 	})
 
 
