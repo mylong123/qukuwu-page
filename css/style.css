@@ -986,6 +986,7 @@ body {
 	border-radius: 2px
 }
 .searchform-active .searchform .sbtn {
+	z-index: 999;
 	float: none;
 	position: absolute;
 	top: 24px;
