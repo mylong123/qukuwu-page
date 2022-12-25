@@ -123,14 +123,13 @@ $(document).ready(function(){
 	TBUI.fullimage = TBUI.fullimage ? Number(TBUI.fullimage) : 1
 
 	TBUI.click = 'click'
+	$('.searchstart-on').show()
+	$('body').attr('class','')
 	
 
 	$('.sitenav-on').on(TBUI.click, function(){
-// 		$('#qukuwu').toggleClass("sitenav-active")
-		$('body').attr('class','444')
-		$('body').addClass('active')
-		TBUI.bd.addClass('activess')		
-// 		TBUI.bd.addClass("sitenav-active")
+		//$('#qukuwu').toggleClass("sitenav-active")
+		$('body').attr('class','sitenav-active')
 	})
 
 	$('.sitenav-mask').on(TBUI.click, function(){
