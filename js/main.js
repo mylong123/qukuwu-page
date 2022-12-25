@@ -92,7 +92,11 @@ j=Math.ceil((f+1)*b)-Math.floor(f*b);d.fillRect(Math.round(i*b),Math.round(f*e),
 d+"px").css("background-color",a.isDark(e,i)?h.foreground:h.background).appendTo(f)}}a=c;jQuery(a).appendTo(this)})}})(jQuery);
 
 
-
+$().ready(function(){
+    //默认搜索框
+	$('.searchstart-on').show()
+	$('body').removeClass('searchform-active')
+})
 
 
 
@@ -122,7 +126,7 @@ $(document).ready(function(){
 	TBUI.fullimage = TBUI.fullimage ? Number(TBUI.fullimage) : 1
 
 	TBUI.click = 'click'
-	
+
 
 	$('.sitenav-on').on(TBUI.click, function(){
 		//$('#qukuwu').toggleClass("sitenav-active")
