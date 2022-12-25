@@ -108,10 +108,6 @@ $(document).ready(function(){
         if (durl == nurl) { //String 对象用于处理文本（字符串）
             $this.parent().addClass("current-menu-item");
         }
-	//显示搜索按钮
-	$('.searchstart-on').show()
-	//隐藏搜索框
-	$('#qukuwu').removeClass('searchform-active')
     });
 
 	// TBUI
@@ -131,7 +127,9 @@ $(document).ready(function(){
 
 	$('.sitenav-on').on(TBUI.click, function(){
 		//$('#qukuwu').toggleClass("sitenav-active")
-		TBUI.bd.addClass("sitenav-active")
+// 		TBUI.bd.addClass("sitenav-active")
+		document.getelementbyid("qukuwu").classname="sitenav-active"
+		print(0)
 	})
 
 	$('.sitenav-mask').on(TBUI.click, function(){
